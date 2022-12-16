@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Francois+One&family=Noto+Serif&family=Oswald&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Francois One', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background:#4ecdc4;
+}
+
+.contenido{
+    width: 50vh;
+    background:#1a535c;
+    border-radius: 35px;
+    padding: 60px 50px;
+}
+
+.contenido .texto{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contenido .campo{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.campo input{
+    height: 60%;
+    width: 100%;
+    padding-left: 45px;
+    font-size:13px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.campo span{
+    position: absolute;
+    width: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #4ecdc4;
+}
+
+.fa-solid{
+    outline: none;
+    color: #000;
+    position: absolute;
+    top: 7px;
+    right:10px;
+    cursor:pointer;
+    opacity: 0.2;
+}
+
+button{
+    margin: 25px 0;
+    width: 50%;
+    height: 30px;
+    background: #4ecdc4;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover{
+    background: #2b8997;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.redes i{
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 28px;
+    background-color: #4ecdc4;
+    border-radius: 50%;
+}
+
+.redes i:hover{
+    background: #2b8997;
+}
+
+[type="checkbox"]{
+    display: none;
+}
+
+.recordar{
+    margin:25px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+label{
+    padding-left: 2em;
+    position: relative;
+    cursor: pointer;
+}
+
+label:before{
+    content: "";
+    border: solid 2px #4ecdc4;
+    border-radius: 5px;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    transition: all 0.2s;
+    transform: rotate(0deg);
+}
+
+[type="checkbox"]:checked + label::before{
+    color: #edf2f4;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    transform: rotate(360deg);
+}
+
+.final{
+    font-weight: bold;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 13px;
+    position: absolute;
+}
+
+.registrate{
+    text-decoration: none;
+    color: #4ecdc4;
+}
+
+.registrate:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width:320px){
+    .contenido{
+        padding: 0 0 0 0;
+        background:#4ecdc4;
+    }
+
+    button{
+        background: #1a535c;
+    }
+    
+    .redes i{
+        background: #1a535c;
+    }
+
+    label:before{
+        content: "";
+        border: solid 2px #1a535c;
+        border-radius: 5px;
+        width: 0.8em;
+        height: 0.8em;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        transition: all 0.2s;
+        transform: rotate(0deg);
+    }
+    .final{
+        position: relative;
+        text-align: center;
+    }
+
+    .registrate{
+        color: #1a535c;
+        font-weight: bold;
+
+    }
+}
+
+
